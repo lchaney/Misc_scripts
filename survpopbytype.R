@@ -1,0 +1,5 @@
+ggsurv_m(survfit(Surv(time, death) ~ strata(pop), data = svdat[which(svdat$type == "V4x"),]))
+ggsurv_m(survfit(Surv(time, death) ~ strata(pop), data = svdat[which(svdat$type == "V2x"),]))
+ggsurv_m(survfit(Surv(time, death) ~ strata(pop), data = svdat[which(svdat$type == "W4x"),]))
+ggsurv_m(survfit(Surv(time, death) ~ strata(pop), data = svdat[which(svdat$type == "T2x"),]))
+ggsurv_m(survfit(Surv(time, death) ~ strata(pop), data = svdat[which(svdat$type == "T4x"),]))
